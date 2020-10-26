@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      #map {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="lastupdate">Last updated: ???</p>
+    <svg width="500" height="500" id="map">
+      <polygon
+        points="260,120 272,120 272,130 260,128"
+        id="dpt75"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="255,2 263,16 274,24 282,23 285,32 291,43 289,53 300,55 313,55 323,58 329,58 330,53 326,49 330,43 324,39 312,38 310,33 306,28 302,31 292,14 287,14 284,19 274,12 270,1 262,1"
+        id="dpt59"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="255,4 238,9 238,16 237,29 236,39 237,42 242,39 255,47 263,47 269,49 267,53 273,53 276,49 280,57 288,57 291,47 286,36 280,26"
+        id="dpt62"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="236,43 232,54 235,61 241,64 245,74 254,78 260,76 276,83 290,76 295,59 284,57 274,53 267,53 266,47 257,49 242,40"
+        id="dpt80"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="295,61 292,77 293,90 288,98 289,105 294,111 297,119 304,122 312,114 311,110 314,106 311,99 321,92 325,95 325,87 326,80 330,76 330,61 312,57"
+        id="dpt02"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="244,76 241,81 244,88 242,92 242,105 249,107 254,103 263,107 275,110 291,109 288,102 288,98 293,92 289,77 275,83 259,77"
+        id="dpt60"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="229,57 214,65 205,66 185,77 181,84 190,90 195,87 211,95 215,100 225,95 228,91 241,92 241,84 242,74 242,67"
+        id="dpt76"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="188,92 192,121 199,122 206,132 218,129 227,129 232,121 229,113 237,109 241,105 241,94 228,92 217,99 199,90"
+        id="dpt27"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="353,49 348,57 341,61 331,61 331,74 327,81 327,92 330,92 339,99 345,99 346,100 358,100 362,92 363,79 367,81 375,79 370,74 361,69 356,69 353,53"
+        id="dpt08"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="326,95 322,92 311,99 313,107 312,111 312,115 305,124 306,135 311,141 320,142 327,132 337,132 337,137 342,141 353,138 361,131 357,124 360,115 357,102 336,98"
+        id="dpt51"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="306,137 305,149 309,156 311,161 316,159 320,174 335,174 344,172 352,167 357,162 357,153 348,144 352,139 344,141 338,138 337,132 328,132 319,142"
+        id="dpt10"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="361,132 350,143 357,150 357,164 352,169 363,178 362,185 375,191 381,188 388,185 389,178 395,172 386,163 388,157 381,149 372,139"
+        id="dpt52"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="376,80 363,83 363,96 360,102 360,119 357,124 362,129 362,134 381,146 391,142 388,124 391,114 391,107 386,99 386,90 379,90"
+        id="dpt55"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="396,107 398,95 395,86 388,81 379,84 380,88 386,91 387,100 391,109 390,117 389,124 391,141 398,147 422,142 428,144 440,137 411,122"
+        id="dpt54"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="397,87 398,98 397,107 401,114 409,117 419,126 440,135 446,122 438,119 432,117 437,109 443,110 450,111 454,114 457,106 450,99 436,102 431,98 425,100 419,94 415,87 403,84"
+        id="dpt57"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="389,157 387,162 394,171 404,166 407,171 414,169 417,172 421,169 433,175 434,166 443,147 440,147 439,137 430,144 414,143 399,147 391,142 382,147"
+        id="dpt88"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="457,105 454,114 446,113 438,110 433,115 446,121 446,128 446,134 441,139 443,147 457,159 463,144 466,129 474,117 480,109 474,109 468,106"
+        id="dpt67"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="445,147 441,161 435,168 435,177 442,181 442,188 446,195 454,196 457,190 463,185 457,180 461,161 457,159 450,154"
+        id="dpt68"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="431,177 427,191 433,191 438,199 445,191 441,181"
+        id="dpt90"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="417,172 413,169 410,172 403,167 398,172 390,180 388,187 382,190 380,198 382,209 390,210 399,205 405,204 411,201 416,195 423,195 425,190 425,181 430,177 424,172"
+        id="dpt70"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="428,191 422,195 415,197 403,204 390,210 396,215 394,222 401,225 403,231 411,234 408,242 407,246 409,248 420,234 420,225 424,222 438,207 441,201 437,201 436,197"
+        id="dpt25"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="383,210 375,222 379,231 382,234 379,237 382,242 380,250 377,255 384,264 390,261 394,264 399,262 409,249 408,239 409,234 400,223 393,222 394,215 390,210"
+        id="dpt39"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="416,265 410,271 404,271 399,275 400,284 406,292 411,292 417,296 425,284 432,289 437,289 438,286 447,280 436,268 435,260 436,253 424,255 417,259"
+        id="dpt74"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="384,265 390,262 398,265 407,256 412,258 405,270 398,274 399,284 391,300 381,286 375,292 367,291 360,286 357,278 357,269 363,253 372,253 378,257"
+        id="dpt01"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="357,285 356,272 354,265 345,266 343,272 339,279 342,291 343,300 357,311 371,295 363,289"
+        id="dpt69"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="343,299 342,288 338,281 340,271 323,266 321,281 316,291 324,301 328,310 328,318 336,316 343,319 348,325 358,319 357,310"
+        id="dpt42"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="417,296 409,292 399,285 393,299 397,310 403,313 406,308 411,311 415,316 415,325 425,329 432,326 441,325 451,317 451,309 446,305 445,298 436,292 425,286"
+        id="dpt73"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="407,309 403,313 381,288 357,311 360,319 367,318 375,325 376,332 387,333 388,345 400,352 410,342 423,342 417,332 414,320 414,314"
+        id="dpt38"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="377,331 376,323 368,318 360,320 364,339 360,349 357,374 368,370 377,376 389,382 397,382 397,374 387,371 388,364 396,362 397,354 389,346 388,333"
+        id="dpt26"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="357,319 349,323 336,345 324,351 330,371 340,376 354,376 358,351 363,338"
+        id="dpt07"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="433,327 419,331 424,342 411,345 400,354 394,365 388,365 389,371 395,374 397,380 406,377 408,368 414,364 419,367 424,361 435,364 437,357 445,351 451,348 448,341 440,337"
+        id="dpt05"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="447,351 437,358 435,365 424,362 420,367 413,365 407,373 407,380 400,380 390,384 393,393 394,401 402,405 407,405 412,408 420,402 424,405 433,399 439,399 439,396 447,393 438,382 439,373 446,368 445,361"
+        id="dpt04"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="448,370 439,376 441,384 447,393 437,399 443,405 444,411 449,411 449,417 456,409 463,402 472,399 476,387 479,382 476,376 468,377 455,374"
+        id="dpt06"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="450,418 445,409 437,399 427,405 420,401 414,408 401,405 401,422 399,434 408,441 417,441 425,437 440,433 443,424"
+        id="dpt83"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="390,385 368,371 356,376 357,386 364,392 358,396 370,401 377,406 384,406 394,409 401,409 402,405 391,396"
+        id="dpt84"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="362,396 357,408 349,412 342,422 354,422 363,425 370,424 374,428 382,430 389,431 399,434 401,411 384,408 375,405"
+        id="dpt13"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="484,401 481,402 482,417 473,415 473,424 451,437 465,439 473,445 480,456 481,465 489,463 491,447 490,425 487,414"
+        id="dpt2B"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="454,439 457,443 451,444 457,450 461,456 456,460 463,462 459,471 468,475 466,479 481,488 485,481 489,476 489,463 483,465 480,456 470,444"
+        id="dpt2A"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="320,172 315,161 309,161 308,154 303,149 293,152 288,161 292,169 289,182 283,187 287,195 296,199 305,199 313,201 330,209 330,199 338,182 336,174"
+        id="dpt89"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="363,188 360,182 360,177 353,169 345,172 337,174 338,182 332,196 330,207 334,215 353,231 370,228 375,228 375,219 383,209 377,198 382,190 373,191"
+        id="dpt21"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="353,231 334,218 328,222 330,234 323,242 314,241 317,252 327,257 328,262 325,266 341,270 341,264 353,262 357,269 363,253 373,252 377,255 381,244 379,234 374,226"
+        id="dpt71"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="306,199 298,201 287,196 285,207 292,223 291,238 300,244 310,239 320,242 330,234 328,221 334,217 330,209"
+        id="dpt58"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="188,91 175,98 165,95 153,94 146,91 138,92 137,98 145,105 145,114 136,122 140,126 147,126 152,124 162,122 173,124 184,119 192,117"
+        id="dpt14"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="137,92 135,86 133,79 135,76 129,73 122,76 109,71 111,79 112,87 119,99 120,132 122,141 131,139 145,141 149,134 146,126 139,126 137,122 144,114 143,103"
+        id="dpt50"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="194,122 188,117 173,124 156,124 146,128 149,137 144,143 169,140 175,149 186,143 192,146 192,152 205,159 205,153 211,149 211,142 205,130"
+        id="dpt61"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="236,135 233,119 228,128 207,134 212,141 212,149 205,153 208,161 223,172 234,172 238,167 244,168 251,157 245,144"
+        id="dpt28"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="284,185 288,177 293,169 287,162 270,164 266,156 250,156 248,164 238,167 234,172 235,184 242,191 260,191 283,199 288,195"
+        id="dpt45"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="255,211 257,204 257,191 245,191 236,185 233,171 224,172 208,162 207,177 201,188 214,192 217,209 225,215 234,212 245,215"
+        id="dpt41"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="289,237 290,215 284,211 285,199 259,191 257,209 248,214 244,219 251,219 255,231 259,258 263,253 271,253 274,245 281,239"
+        id="dpt18"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="217,226 223,225 227,217 217,210 214,195 200,188 186,195 178,215 186,221 187,229 198,225 210,241"
+        id="dpt37"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="258,257 252,221 242,219 247,215 228,215 223,225 218,226 208,246 220,260 241,258"
+        id="dpt36"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="319,268 328,264 326,256 318,253 310,242 306,245 298,244 288,238 273,252 259,257 273,275 287,269 293,277 308,280 318,283"
+        id="dpt03"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="316,294 316,283 293,277 284,269 273,276 273,285 266,294 271,303 271,313 283,317 291,320 303,316 325,317 326,306"
+        id="dpt63"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="330,344 337,344 348,325 339,316 315,318 305,316 295,320 304,337 307,345 315,345 322,349"
+        id="dpt43"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="303,339 300,328 294,320 271,314 254,338 255,348 257,357 260,357 269,357 278,341 287,351"
+        id="dpt15"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="48,168 38,155 45,152 43,124 28,122 17,124 0,131 1,140 17,152 0,157 12,163 14,171 24,169 45,175"
+        id="dpt29"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="82,158 91,158 103,150 106,139 97,132 87,130 78,134 61,115 44,124 46,152 55,156 63,154 76,162"
+        id="dpt22"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="136,154 137,140 130,139 122,142 119,132 97,132 106,139 105,149 93,158 97,185 112,185 122,175 127,180 133,169 137,168"
+        id="dpt35"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="95,185 92,159 81,158 78,161 63,154 55,156 44,153 39,155 47,167 45,174 58,185 82,196 96,193"
+        id="dpt56"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="160,180 174,149 167,140 154,144 139,141 139,169 131,182 149,182"
+        id="dpt53"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="199,187 206,180 207,162 193,152 187,144 174,150 159,180 171,191 183,195"
+        id="dpt72"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="176,217 184,196 159,182 131,182 140,202 126,207 130,215 127,220 138,223 153,222"
+        id="dpt49"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="127,205 138,204 129,181 122,177 112,185 96,187 97,192 84,198 85,205 93,212 97,219 114,229 121,226 127,220"
+        id="dpt44"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="149,256 148,239 141,226 127,221 114,229 99,221 93,229 104,249 127,265 146,264"
+        id="dpt85"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="174,248 171,221 154,222 142,226 151,259 147,265 157,274 169,282 182,275 175,260"
+        id="dpt79"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="188,229 178,219 172,221 174,256 182,276 203,276 206,265 220,261 208,248 208,242 197,228"
+        id="dpt86"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="167,292 167,283 145,265 130,265 126,292 144,316 158,327 168,329 172,325 160,318 162,308 155,294"
+        id="dpt17"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="174,325 210,284 203,277 181,277 170,282 168,292 155,295 161,308 160,317"
+        id="dpt16"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="265,292 271,283 268,266 259,260 229,262 225,270 237,291 248,295 262,299"
+        id="dpt23"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="234,287 225,270 228,262 212,264 204,277 210,283 200,296 208,303 223,312 247,296"
+        id="dpt87"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="268,315 269,298 262,298 252,296 221,314 222,319 221,327 225,329 227,337 236,335 241,341 253,339 260,325"
+        id="dpt19"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="227,345 228,332 219,328 219,319 223,313 200,296 173,327 171,345 182,345 184,351 189,355 211,360"
+        id="dpt24"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="176,357 181,351 181,345 171,346 171,329 161,332 129,305 121,365 144,367 154,380 160,380 162,377 165,380"
+        id="dpt33"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="205,383 205,373 208,362 182,351 164,382 174,384 174,393 195,390"
+        id="dpt47"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="159,414 162,396 175,392 175,385 155,380 145,368 120,365 112,398 108,415"
+        id="dpt40"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="153,458 167,430 162,417 107,418 97,424 112,431 110,440"
+        id="dpt64"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="254,357 251,338 240,341 228,334 227,344 210,370 220,379 242,374"
+        id="dpt46"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="305,394 279,344 270,357 253,362 245,374 247,385 255,382 279,406 292,408"
+        id="dpt12"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="251,424 274,424 276,414 290,409 278,408 255,384 238,389 231,399 238,412"
+        id="dpt81"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="219,405 245,385 242,374 225,380 210,373 198,391 206,402"
+        id="dpt82"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="195,431 202,425 208,427 216,417 195,391 164,398 161,414 176,425"
+        id="dpt32"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="238,436 245,425 253,424 238,414 232,398 222,405 208,405 216,417 208,427 198,427 189,441 194,447 191,455 187,455 187,462 192,462 197,459 204,458 208,443 217,442 225,434"
+        id="dpt31"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="186,465 188,455 193,450 187,440 193,431 165,419 168,431 155,456 165,463"
+        id="dpt65"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="240,472 255,466 244,459 249,455 249,443 236,434 225,437 219,441 211,443 204,459"
+        id="dpt09"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="303,383 328,384 328,368 321,351 308,348 304,341 287,354"
+        id="dpt48"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="336,415 342,421 360,395 355,377 341,377 329,368 328,383 303,386 305,396 311,402 320,395 334,405"
+        id="dpt30"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="299,437 338,412 318,395 310,402 306,396 276,417 273,427 281,436 286,430"
+        id="dpt34"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="292,456 291,443 300,437 285,431 280,436 273,427 245,425 238,436 249,443 251,456 245,459 254,466 265,459"
+        id="dpt11"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="295,478 293,458 267,460 240,475 250,482 263,479 274,485"
+        id="dpt66"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="274,114 273,131 271,146 266,153 272,161 284,161 289,152 300,147 305,138 303,124 290,109"
+        id="dpt77"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="258,129 271,132 266,152 254,153 249,143"
+        id="dpt91"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="235,109 258,119 258,128 245,143 236,132 231,115"
+        id="dpt78"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+      <polygon
+        points="249,107 255,105 273,110 268,117 258,117 236,107"
+        id="dpt95"
+        style="fill: lightgrey; stroke: black; stroke-width: 1"
+      />
+    </svg>
+    <script src="main.js"></script>
+  </body>
+</html>
